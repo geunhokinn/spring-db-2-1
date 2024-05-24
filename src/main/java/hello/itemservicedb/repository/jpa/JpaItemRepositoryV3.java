@@ -27,6 +27,7 @@ public class JpaItemRepositoryV3 implements ItemRepository {
     private final EntityManager em;
     private final JPAQueryFactory query;
     private final SpringDataJpaItemRepository repository;
+    // em 으로 jpa 만 사용해도 되지면 spring data jpa 연습으로 repository 를 di 함
 
     public JpaItemRepositoryV3(EntityManager em, SpringDataJpaItemRepository repository) {
         this.em = em;
